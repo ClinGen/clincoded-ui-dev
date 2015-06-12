@@ -1,0 +1,11 @@
+{
+    "esnext": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+        "Event"
+    ],
+    "globalstrict": true,
+    "newcap": false,
+    "sub": true
+}

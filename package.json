@@ -1,0 +1,22 @@
+{
+  "name": "node-static-test",
+  "version": "1.0.0",
+  "description": "Test to see how node-static works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Forrest Tanaka",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.6",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-react": "^0.12.2"
+  }
+}
