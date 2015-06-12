@@ -1,10 +1,15 @@
 html, body {
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', 'Lato', Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .site-header {
     border-top: 6px solid $color-trim;
     border-bottom: 2px solid $color-trim;
-    background: url(../img/header-bg.svg) 0 0;
+    background: white;
+ 
+    @media screen and (min-width: $screen-sm-min) {
+        background: url(../img/header-bg.jpg) center center no-repeat;
+        background-size: cover;
+    }
 }

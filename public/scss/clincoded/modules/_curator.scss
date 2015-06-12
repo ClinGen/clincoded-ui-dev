@@ -1,0 +1,46 @@
+.curation-data {
+    dl {
+        margin: 0;
+
+        @media screen and (min-width: $screen-sm-min) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.curation-data-gene {
+    margin-bottom: 2px;
+}
+
+.curation-data-disease,
+.curation-data-gene {
+    padding: 10px;
+    background-color: #f0f0f0;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+}
+
+.equal-height {
+    overflow: hidden; 
+}
+
+@media screen and (min-width: $screen-sm-min) {
+    .gutter-exc:not(:last-child),
+    .gutter-exc:not(:first-child) {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .gutter-exc:first-child {
+        padding-left: $grid-gutter-width / 2;
+
+    }
+
+    .gutter-exc:last-child {
+        padding-right: $grid-gutter-width / 2;
+
+    }
+}

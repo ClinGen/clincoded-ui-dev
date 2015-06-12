@@ -5629,7 +5629,7 @@ button.close {
 }
 /* line 1, ../scss/clincoded/_base.scss */
 html, body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', 'Lato', Helvetica, sans-serif;
   font-size: 14px;
 }
 
@@ -5637,7 +5637,14 @@ html, body {
 .site-header {
   border-top: 6px solid #67adda;
   border-bottom: 2px solid #67adda;
-  background: url(../img/header-bg.svg) 0 0;
+  background: white;
+}
+@media screen and (min-width: 768px) {
+  /* line 6, ../scss/clincoded/_base.scss */
+  .site-header {
+    background: url(../img/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+  }
 }
 
 /* line 1, ../scss/clincoded/modules/_navbar.scss */
@@ -5649,36 +5656,126 @@ html, body {
 
 /* line 7, ../scss/clincoded/modules/_navbar.scss */
 .navbar-brand {
-  margin: 10px;
   padding: 0;
-  width: 152px;
-  height: 52px;
+  width: 172px;
+  height: 72px;
   background: url(../img/clingen-logo-sm.svg) 0 0 no-repeat;
 }
 @media screen and (min-width: 768px) {
   /* line 7, ../scss/clincoded/modules/_navbar.scss */
   .navbar-brand {
-    margin: 10px;
     padding: 0;
-    height: 116.36px;
+    height: 136px;
     background: url(../img/clingen-logo.svg) 0 0 no-repeat;
   }
 }
 
-/* line 23, ../scss/clincoded/modules/_navbar.scss */
-.nav-main {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 1.3rem;
-  font-weight: 300;
+/* line 21, ../scss/clincoded/modules/_navbar.scss */
+.navbar-main {
+  position: relative;
+}
+/* line 24, ../scss/clincoded/modules/_navbar.scss */
+.navbar-main .container {
+  position: relative;
+  z-index: 10;
 }
 
-/* line 31, ../scss/clincoded/modules/_navbar.scss */
+/* line 30, ../scss/clincoded/modules/_navbar.scss */
+.navbar-main-bg {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 39, ../scss/clincoded/modules/_navbar.scss */
+  .nav-main {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+/* line 49, ../scss/clincoded/modules/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
   color: #155b8b;
 }
 
+/* line 53, ../scss/clincoded/modules/_navbar.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+/* line 58, ../scss/clincoded/modules/_navbar.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+  margin: 16px 0 0 0;
+}
+/* line 62, ../scss/clincoded/modules/_navbar.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #155b8b;
+  height: 4px;
+}
+
+/* line 2, ../scss/clincoded/modules/_curator.scss */
+.curation-data dl {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  /* line 2, ../scss/clincoded/modules/_curator.scss */
+  .curation-data dl {
+    margin-bottom: 10px;
+  }
+}
+
+/* line 11, ../scss/clincoded/modules/_curator.scss */
+.curation-data-gene {
+  margin-bottom: 2px;
+}
+
+/* line 15, ../scss/clincoded/modules/_curator.scss */
+.curation-data-disease,
+.curation-data-gene {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  /* line 15, ../scss/clincoded/modules/_curator.scss */
+  .curation-data-disease,
+  .curation-data-gene {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+}
+
+/* line 26, ../scss/clincoded/modules/_curator.scss */
+.equal-height {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 31, ../scss/clincoded/modules/_curator.scss */
+  .gutter-exc:not(:last-child),
+  .gutter-exc:not(:first-child) {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  /* line 37, ../scss/clincoded/modules/_curator.scss */
+  .gutter-exc:first-child {
+    padding-left: 15px;
+  }
+
+  /* line 42, ../scss/clincoded/modules/_curator.scss */
+  .gutter-exc:last-child {
+    padding-right: 15px;
+  }
+}
 /* line 14, ../scss/bootstrap/mixins/_clearfix.scss */
 .clearfix:before, .clearfix:after {
   content: " ";

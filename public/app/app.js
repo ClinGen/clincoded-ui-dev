@@ -42,9 +42,7 @@ var Header = React.createClass({
     render: function() {
         return (
             <header className="site-header">
-                <div className="container">
-                    <Navbar portal={portal} />
-                </div>
+                <Navbar portal={portal} />
             </header>
         );
     }
