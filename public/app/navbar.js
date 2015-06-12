@@ -24,19 +24,20 @@ var GlobalSections = React.createClass({
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
+                       <a className="navbar-brand text-hide" aria-role="banner" href="/">ClinGen</a>
                     </div>
-                </div>
 
-                <div className="collapse navbar-collapse" id="clingen-navbar-collapse">
-                    <ul className="nav navbar-nav">
-                        {menus.map(function(menu) {
-                            return (
-                                <li key={menu.id}>
-                                    <a href={menu.url}>{menu.title}</a>
-                                </li>
-                            );
-                        })}
-                    </ul>
+                    <div className="collapse navbar-collapse" id="clingen-navbar-collapse">
+                        <ul className="nav navbar-nav navbar-right nav-main">
+                            {menus.map(function(menu) {
+                                return (
+                                    <li key={menu.id}>
+                                        <a href={menu.url}>{menu.title}</a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </nav>
         );

@@ -5627,6 +5627,58 @@ button.close {
     width: 900px;
   }
 }
+/* line 1, ../scss/clincoded/_base.scss */
+html, body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* line 6, ../scss/clincoded/_base.scss */
+.site-header {
+  border-top: 6px solid #67adda;
+  border-bottom: 2px solid #67adda;
+  background: url(../img/header-bg.svg) 0 0;
+}
+
+/* line 1, ../scss/clincoded/modules/_navbar.scss */
+.navbar {
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* line 7, ../scss/clincoded/modules/_navbar.scss */
+.navbar-brand {
+  margin: 10px;
+  padding: 0;
+  width: 152px;
+  height: 52px;
+  background: url(../img/clingen-logo-sm.svg) 0 0 no-repeat;
+}
+@media screen and (min-width: 768px) {
+  /* line 7, ../scss/clincoded/modules/_navbar.scss */
+  .navbar-brand {
+    margin: 10px;
+    padding: 0;
+    height: 116.36px;
+    background: url(../img/clingen-logo.svg) 0 0 no-repeat;
+  }
+}
+
+/* line 23, ../scss/clincoded/modules/_navbar.scss */
+.nav-main {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* line 31, ../scss/clincoded/modules/_navbar.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #155b8b;
+}
+
 /* line 14, ../scss/bootstrap/mixins/_clearfix.scss */
 .clearfix:before, .clearfix:after {
   content: " ";

@@ -1,0 +1,33 @@
+.navbar {
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-brand {
+    @extend .navbar-brand;
+    margin: 10px;
+    padding: 0;
+    width: 152px;
+    height: 52px;
+    background: url(../img/clingen-logo-sm.svg) 0 0 no-repeat;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin: 10px;
+        padding: 0;
+        height: 116.36px;
+        background: url(../img/clingen-logo.svg) 0 0 no-repeat;
+    }
+}
+
+.nav-main {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $color-link;
+}

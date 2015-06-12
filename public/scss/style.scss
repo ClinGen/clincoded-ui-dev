@@ -45,6 +45,11 @@
 //@import "bootstrap/popovers";
 //@import "bootstrap/carousel";
 
+// Clincoded styles
+@import "clincoded/variables";
+@import "clincoded/base";
+@import "clincoded/modules/navbar";
+
 // Utility classes - Bootstrap 3, keep last
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";

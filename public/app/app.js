@@ -41,8 +41,10 @@ var App = React.createClass({
 var Header = React.createClass({
     render: function() {
         return (
-            <header>
-                <Navbar portal={portal} />
+            <header className="site-header">
+                <div className="container">
+                    <Navbar portal={portal} />
+                </div>
             </header>
         );
     }

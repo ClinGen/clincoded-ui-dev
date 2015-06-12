@@ -37,6 +37,12 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['browserify']
             },
+            css: {
+                files: [
+                    'public/scss/**/*.scss'
+                ],
+                tasks: ['compass']
+            },
             livereload: {
                 // Browser live reloading
                 // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
