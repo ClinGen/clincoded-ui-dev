@@ -8,11 +8,30 @@
   },
   "author": "Forrest Tanaka",
   "license": "ISC",
+  "browser": {
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
   "dependencies": {
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4",
     "node-static": "^0.7.6",
     "react": "^0.13.3"
   },
   "devDependencies": {
+    "browserify": "^10.2.4",
+    "browserify-shim": "^3.8.8",
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.8.0",
     "grunt-contrib-compass": "^1.0.3",
