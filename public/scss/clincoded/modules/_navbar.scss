@@ -41,13 +41,17 @@
         position: absolute;
         bottom: 0;
         right: $grid-gutter-width;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 300;
     }
 }
 
 .navbar-default .navbar-nav > li > a {
     color: $color-link;
+
+    &:hover {
+        background-color: white;
+    }
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {

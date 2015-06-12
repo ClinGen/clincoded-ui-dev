@@ -5696,7 +5696,7 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 30px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
   }
 }
@@ -5705,18 +5705,22 @@ html, body {
 .navbar-default .navbar-nav > li > a {
   color: #155b8b;
 }
+/* line 52, ../scss/clincoded/modules/_navbar.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: white;
+}
 
-/* line 53, ../scss/clincoded/modules/_navbar.scss */
+/* line 57, ../scss/clincoded/modules/_navbar.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
 
-/* line 58, ../scss/clincoded/modules/_navbar.scss */
+/* line 62, ../scss/clincoded/modules/_navbar.scss */
 .navbar-default .navbar-toggle {
   border: none;
   margin: 16px 0 0 0;
 }
-/* line 62, ../scss/clincoded/modules/_navbar.scss */
+/* line 66, ../scss/clincoded/modules/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #155b8b;
   height: 4px;
