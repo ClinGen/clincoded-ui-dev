@@ -6,15 +6,21 @@ Once you clone this repository, first make sure you have [Node](https://nodejs.o
 
 First, install the Node packages needed to build the project:
 
-```npm install```
+```
+npm install
+```
 
 Then build the project:
 
-```grunt```
+```
+grunt
+```
 
 Now the project is ready to run. First startup the server:
 
-```npm start```
+```
+npm start
+```
 
 Then visit the site at http://localhost:8080.
 
@@ -22,7 +28,9 @@ Then visit the site at http://localhost:8080.
 
 I added a convenience so you can automatically rebuild the project when you save relevant files (HTML, Javascript, Sass). Just enter:
 
-```grunt dev```
+```
+grunt dev
+```
 
 This holds that terminal window while it watches for changes to the files. To stop it watching for these changes and get your terminal back, Enter Control-C.
 
