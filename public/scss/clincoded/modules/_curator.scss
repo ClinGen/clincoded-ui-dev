@@ -44,3 +44,16 @@
 
     }
 }
+
+.pmid-selection-trigger {
+    background-color: #f0f0f0;
+}
+
+.btn-direct-right,
+.btn-direct-right:hover {
+    width: 80px;
+    height: 25px;
+    background-image: url(../img/btn-direct-right.svg);
+    border: none;
+    background-color: transparent;
+}

@@ -1,13 +1,33 @@
 'use strict';
 var React = require('react');
-
+var pmid_items = require('./testdata').pmid_items;
 
 // Curator page content
 var Curator = module.exports.Curator = React.createClass({
+    getInitialState: function() {
+        return {
+            currPmid: '',
+            selectionListOpen: false
+        };
+    },
+
+    selectionListOpenChange: function() {
+        this.setState({selectionListOpen: !this.state.selectionListOpen});
+    },
+
     render: function() {
         return (
             <div>
                 <CurationData />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <PmidSelectionTrigger pmidList={pmid_items} selectionListOpenChange={this.selectionListOpenChange} />
+                            <PmidSelectionList pmidList={pmid_items} />
+                            {this.state.selectionListOpen ? <p>Open</p> : null}
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -61,5 +81,25 @@ var DiseaseCurationData = React.createClass({
                 </div>
             </div>
         );
+    }
+});
+
+
+// Controls the display of the Pmid selection area; this is the trigger part
+var PmidSelectionTrigger = React.createClass({
+    render: function() {
+        return (
+            <div className="pmid-selection-trigger">
+                <button className="btn btn-primary btn-direct-right" onClick={this.props.selectionListOpenChange}>Select</button>
+                <span className="pmid-selection-curr-id">PMID: 23294250</span>
+                <button className="btn btn-primary">Add New PMID</button>
+            </div>
+        );
+    }
+});
+
+var PmidSelectionList = React.createClass({
+    render: function() {
+        return null;
     }
 });

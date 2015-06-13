@@ -5634,13 +5634,25 @@ html, body {
 }
 
 /* line 6, ../scss/clincoded/_base.scss */
+.btn, .btn:hover {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  font-size: 1rem;
+  border: none;
+  background-color: #155b8b;
+}
+
+/* line 15, ../scss/clincoded/_base.scss */
 .site-header {
   border-top: 6px solid #67adda;
   border-bottom: 2px solid #67adda;
   background: white;
 }
 @media screen and (min-width: 768px) {
-  /* line 6, ../scss/clincoded/_base.scss */
+  /* line 15, ../scss/clincoded/_base.scss */
   .site-header {
     background: url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
@@ -5780,14 +5792,25 @@ html, body {
     padding-right: 15px;
   }
 }
-/* line 14, ../scss/bootstrap/mixins/_clearfix.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
+/* line 48, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-trigger {
+  background-color: #f0f0f0;
 }
-/* line 19, ../scss/bootstrap/mixins/_clearfix.scss */
-.clearfix:after {
-  clear: both;
+
+/* line 52, ../scss/clincoded/modules/_curator.scss */
+.btn-direct-right,
+.btn-direct-right:hover {
+  width: 80px;
+  height: 25px;
+  background-image: url(../img/btn-direct-right.svg);
+  border: none;
+  background-color: transparent;
+}
+
+/* line 9, ../scss/bootstrap/_utilities.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
 }
 
 /* line 12, ../scss/bootstrap/_utilities.scss */
@@ -5824,11 +5847,10 @@ html, body {
 
 /* line 36, ../scss/bootstrap/_utilities.scss */
 .text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 /* line 45, ../scss/bootstrap/_utilities.scss */

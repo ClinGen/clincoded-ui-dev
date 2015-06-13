@@ -3,6 +3,15 @@ html, body {
     font-size: 14px;
 }
 
+.btn, .btn:hover {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    @include border-radius(1px);
+    font-size: 1rem;
+    border: none;
+    background-color: $color-btn;
+}
+
 .site-header {
     border-top: 6px solid $color-trim;
     border-bottom: 2px solid $color-trim;
