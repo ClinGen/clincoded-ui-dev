@@ -15,7 +15,7 @@ var routes = {
 var portal = {
     portal_title: 'ClinGen',
     global_sections: [
-        {id: 'menu1', title: 'Menu 1', url: '/menu1'},
+        {id: 'curator', title: 'Curator', url: '/curator'},
         {id: 'menu2', title: 'Menu 2', url: '/menu2'},
         {id: 'menu3', title: 'Menu 3', url: '/menu3'},
         {id: 'menu4', title: 'Menu 4', url: '/menu4'}
@@ -31,7 +31,7 @@ var App = React.createClass({
         return (
             <div>
                 <Header />
-                {Renderer ? <Renderer /> : <div>Hello there</div>}
+                {Renderer ? <Renderer /> : <div></div>}
             </div>
         );
     }

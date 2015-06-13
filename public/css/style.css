@@ -5628,15 +5628,29 @@ button.close {
   }
 }
 /* line 1, ../scss/clincoded/_base.scss */
-html, body {
-  font-family: 'Helvetica Neue', 'Lato', Helvetica, sans-serif;
-  font-size: 14px;
+html {
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/clincoded/_base.scss */
+  html {
+    font-size: 14px;
+  }
 }
 
-/* line 6, ../scss/clincoded/_base.scss */
+/* line 9, ../scss/clincoded/_base.scss */
+body {
+  font-family: 'Helvetica Neue', 'Lato', Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* line 14, ../scss/clincoded/_base.scss */
+p {
+  line-height: 1.6;
+}
+
+/* line 18, ../scss/clincoded/_base.scss */
 .btn, .btn:hover {
-  padding-top: 2px;
-  padding-bottom: 2px;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
@@ -5645,14 +5659,14 @@ html, body {
   background-color: #155b8b;
 }
 
-/* line 15, ../scss/clincoded/_base.scss */
+/* line 25, ../scss/clincoded/_base.scss */
 .site-header {
   border-top: 6px solid #67adda;
   border-bottom: 2px solid #67adda;
   background: white;
 }
 @media screen and (min-width: 768px) {
-  /* line 15, ../scss/clincoded/_base.scss */
+  /* line 25, ../scss/clincoded/_base.scss */
   .site-header {
     background: url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
@@ -5738,30 +5752,54 @@ html, body {
   height: 4px;
 }
 
-/* line 2, ../scss/clincoded/modules/_curator.scss */
+/* line 1, ../scss/clincoded/modules/_curator.scss */
+.curation-content {
+  margin-top: 10px;
+}
+
+/* line 5, ../scss/clincoded/modules/_curator.scss */
+.curr-pmid-overview {
+  margin-top: 20px;
+}
+
+/* line 9, ../scss/clincoded/modules/_curator.scss */
+.pmid-doi-btns {
+  margin: 10px 0;
+}
+/* line 12, ../scss/clincoded/modules/_curator.scss */
+.pmid-doi-btns .btn {
+  margin-right: 10px;
+}
+
+/* line 17, ../scss/clincoded/modules/_curator.scss */
+.pmid-overview-abstract {
+  margin: 30px 0;
+}
+
+/* line 22, ../scss/clincoded/modules/_curator.scss */
 .curation-data dl {
   margin: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 2, ../scss/clincoded/modules/_curator.scss */
+  /* line 22, ../scss/clincoded/modules/_curator.scss */
   .curation-data dl {
     margin-bottom: 10px;
   }
 }
 
-/* line 11, ../scss/clincoded/modules/_curator.scss */
+/* line 31, ../scss/clincoded/modules/_curator.scss */
 .curation-data-gene {
   margin-bottom: 2px;
 }
 
-/* line 15, ../scss/clincoded/modules/_curator.scss */
+/* line 35, ../scss/clincoded/modules/_curator.scss */
 .curation-data-disease,
 .curation-data-gene {
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
 }
 @media screen and (min-width: 768px) {
-  /* line 15, ../scss/clincoded/modules/_curator.scss */
+  /* line 35, ../scss/clincoded/modules/_curator.scss */
   .curation-data-disease,
   .curation-data-gene {
     margin-bottom: -99999px;
@@ -5769,42 +5807,122 @@ html, body {
   }
 }
 
-/* line 26, ../scss/clincoded/modules/_curator.scss */
+/* line 46, ../scss/clincoded/modules/_curator.scss */
 .equal-height {
   overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 31, ../scss/clincoded/modules/_curator.scss */
+  /* line 51, ../scss/clincoded/modules/_curator.scss */
   .gutter-exc:not(:last-child),
   .gutter-exc:not(:first-child) {
     padding-right: 1px;
     padding-left: 1px;
   }
 
-  /* line 37, ../scss/clincoded/modules/_curator.scss */
+  /* line 57, ../scss/clincoded/modules/_curator.scss */
   .gutter-exc:first-child {
     padding-left: 15px;
   }
 
-  /* line 42, ../scss/clincoded/modules/_curator.scss */
+  /* line 62, ../scss/clincoded/modules/_curator.scss */
   .gutter-exc:last-child {
     padding-right: 15px;
   }
 }
-/* line 48, ../scss/clincoded/modules/_curator.scss */
+/* line 68, ../scss/clincoded/modules/_curator.scss */
 .pmid-selection-trigger {
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
 }
 
-/* line 52, ../scss/clincoded/modules/_curator.scss */
-.btn-direct-right,
-.btn-direct-right:hover {
-  width: 80px;
-  height: 25px;
-  background-image: url(../img/btn-direct-right.svg);
-  border: none;
-  background-color: transparent;
+/* line 72, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-curr-id {
+  position: relative;
+  margin-left: 10px;
+  top: 2px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* line 80, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-trigger {
+  padding: 5px;
+}
+
+/* line 84, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-selected {
+  float: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 84, ../scss/clincoded/modules/_curator.scss */
+  .pmid-selection-selected {
+    float: left;
+  }
+}
+
+/* line 92, ../scss/clincoded/modules/_curator.scss */
+.btn-add-new-pmid {
+  display: block;
+  margin-top: 2px;
+}
+@media screen and (min-width: 768px) {
+  /* line 92, ../scss/clincoded/modules/_curator.scss */
+  .btn-add-new-pmid {
+    float: right;
+    margin-top: 0;
+  }
+}
+
+/* line 102, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-list {
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #e0e0e0;
+}
+
+/* line 108, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-list-item {
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+/* line 113, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-list-item:hover {
+  background-color: #c1dbee;
+}
+/* line 117, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-list-item:first-child {
+  border-top: none;
+}
+
+/* line 122, ../scss/clincoded/modules/_curator.scss */
+.pmid-selection-list-pmid {
+  font-weight: bold;
+}
+
+/* line 126, ../scss/clincoded/modules/_curator.scss */
+.nav-add-evidence {
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 10px;
+}
+/* line 131, ../scss/clincoded/modules/_curator.scss */
+.nav-add-evidence h5 {
+  margin-top: 0;
+  font-weight: bold;
+}
+/* line 136, ../scss/clincoded/modules/_curator.scss */
+.nav-add-evidence li {
+  background-color: #155b8b;
+}
+/* line 139, ../scss/clincoded/modules/_curator.scss */
+.nav-add-evidence li a {
+  color: #fff;
+}
+/* line 142, ../scss/clincoded/modules/_curator.scss */
+.nav-add-evidence li a:hover {
+  text-decoration: none;
+  background-color: #155b8b;
 }
 
 /* line 9, ../scss/bootstrap/_utilities.scss */
