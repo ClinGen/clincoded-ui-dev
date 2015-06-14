@@ -1,1 +1,1 @@
-web: ./node_modules/grunt/lib/grunt ; npm start
+web: npm start
