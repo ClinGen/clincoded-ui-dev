@@ -53,16 +53,16 @@ var Curator = module.exports.Curator = React.createClass({
                         </div>
                         {currPmidItem ?
                             <div className="col-sm-4">
-                                <div className="nav-add-evidence">
+                                <nav className="nav-add-evidence">
                                     <h5>Add Evidence for PMID:{currPmidItem.id}</h5>
                                     <ul className="nav nav-pills nav-stacked">
-                                        <li><a href="#">Add New Group Information</a></li>
-                                        <li><a href="#">Add New Family Information</a></li>
-                                        <li><a href="#">Add New Individual Information</a></li>
-                                        <li><a href="#">Add New Functional Information</a></li>
-                                        <li><a href="#">View Variant Information</a></li>
+                                        <li><a className="btn btn-primary" href="#">Add New Group Information</a></li>
+                                        <li><a className="btn btn-primary" href="#">Add New Family Information</a></li>
+                                        <li><a className="btn btn-primary" href="#">Add New Individual Information</a></li>
+                                        <li><a className="btn btn-primary" href="#">Add New Functional Information</a></li>
+                                        <li><a className="btn btn-primary" href="#">View Variant Information</a></li>
                                     </ul>
-                                </div>
+                                </nav>
                             </div>
                         : null}
                     </div>

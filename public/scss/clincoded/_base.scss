@@ -15,11 +15,16 @@ p {
     line-height: 1.6;
 }
 
-.btn, .btn:hover {
-    @include border-radius(1px);
+.btn {
+    @include border-radius(2px);
+    border: none;
     font-size: 1rem;
     border: none;
     background-color: $color-btn;
+
+    &:hover {
+        background-color: $color-btn-hover !important;
+    }
 }
 
 .site-header {

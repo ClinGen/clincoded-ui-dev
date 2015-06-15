@@ -124,25 +124,12 @@
 }
 
 .nav-add-evidence {
-    background-color: $color-neutral-bg;
+    background-color: $color-neutral-bg !important;
     text-align: center;
     padding: 10px;
 
     h5 {
         margin-top: 0;
         font-weight: bold;
-    }
-
-    li {
-        background-color: $color-btn;
-
-        a {
-            color: #fff;
-
-            &:hover, &:focus {
-                text-decoration: none;
-                background-color: $color-btn;
-            }
-        }
     }
 }

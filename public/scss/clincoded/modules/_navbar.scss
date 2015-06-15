@@ -13,7 +13,7 @@
 
     @media screen and (min-width: $screen-sm-min) {
         padding: 0;
-        height: 136px;
+        height: 134px;
         background: url(../img/clingen-logo.svg) 0 0 no-repeat;
     }
 }
@@ -41,13 +41,13 @@
         position: absolute;
         bottom: 0;
         right: $grid-gutter-width;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
     }
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: $color-link;
+    color: #000;
 
     &:hover {
         background-color: white;
